@@ -26,11 +26,12 @@
     "prettier"
   ],
   "rules": {
+    "@typescript-eslint/ban-types": "warn",
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
     "prettier/prettier": "error",
-    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/rules-of-hooks": "warn",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [
       1,
