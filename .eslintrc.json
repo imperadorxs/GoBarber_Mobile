@@ -26,6 +26,7 @@
     "prettier"
   ],
   "rules": {
+    "camelcase": "off",
     "@typescript-eslint/ban-types": "warn",
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
