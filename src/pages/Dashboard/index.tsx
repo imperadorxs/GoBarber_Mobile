@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { View, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Feather';
 
 import api from '../../services/api';
+import noProfileImage from '../../assets/default.png';
 import { useAuth } from '../../hooks/auth';
 import {
   Container,
@@ -20,6 +20,8 @@ import {
   ProviderMeta,
   ProviderMetaText,
   ProvidersListTitle,
+  UserMenuButton,
+  HeaderProfile,
 } from './styles';
 
 export interface Provider {
@@ -54,13 +56,21 @@ const Dashboard: React.FC = () => {
   return (
     <Container>
       <Header>
-        <HeaderTitle>
-          Bem vindo, {'\n'} <UserName>{user.name}</UserName>
-        </HeaderTitle>
-
-        <ProfileButton onPress={navigateToProfile}>
-          <UserAvatar source={{ uri: user.avatar_url }} />
-        </ProfileButton>
+        <HeaderProfile>
+          <ProfileButton onPress={navigateToProfile}>
+            {user.avatar_url ? (
+              <UserAvatar source={{ uri: user.avatar_url }} />
+            ) : (
+              <UserAvatar source={noProfileImage} />
+            )}
+          </ProfileButton>
+          <HeaderTitle>
+            Bem vindo, {'\n'} <UserName>{user.name}</UserName>
+          </HeaderTitle>
+        </HeaderProfile>
+        <UserMenuButton>
+          <Icon name="list" size={45} color="#fff" />
+        </UserMenuButton>
       </Header>
       <ProvidersList
         data={providers}
@@ -74,7 +84,11 @@ const Dashboard: React.FC = () => {
               navigateToCreateAppointment(provider.id);
             }}
           >
-            <ProviderAvatar source={{ uri: provider.avatar_url }} />
+            {provider.avatar_url ? (
+              <ProviderAvatar source={{ uri: provider.avatar_url }} />
+            ) : (
+              <ProviderAvatar source={noProfileImage} />
+            )}
 
             <ProviderInfo>
               <ProviderName>{provider.name}</ProviderName>

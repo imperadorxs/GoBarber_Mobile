@@ -32,7 +32,7 @@
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
-    "prettier/prettier": "error",
+    "prettier/prettier": "warn",
     "react-hooks/rules-of-hooks": "warn",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [

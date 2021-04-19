@@ -21,6 +21,10 @@ interface HourTextProps {
   selected: boolean;
 }
 
+interface CreateAppointmentButtonProps {
+  enable: boolean;
+}
+
 export const Container = styled.View`
   flex: 1;
 `;
@@ -145,7 +149,10 @@ export const HourText = styled.Text<HourTextProps>`
   font-size: 16px;
 `;
 
-export const CreateAppointmentButton = styled(RectButton)`
+export const CreateAppointmentButton = styled(
+  RectButton,
+) <CreateAppointmentButtonProps>`
+  opacity: ${props => (props.enable ? 1 : 0.3)};
   height: 46px;
   background: #ff9000;
   border-radius: 10px;

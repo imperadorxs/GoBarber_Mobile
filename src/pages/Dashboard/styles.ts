@@ -12,10 +12,13 @@ export const Header = styled.View`
   padding: 24px;
   padding-top: ${Platform.OS === 'ios' ? getStatusBarHeight() + 24 : 24}px;
   background: #28262e;
-
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+`;
+
+export const HeaderProfile = styled.View`
+  flex-direction: row;
 `;
 
 export const HeaderTitle = styled.Text`
@@ -30,12 +33,22 @@ export const UserName = styled.Text`
   color: #ff9000;
 `;
 
-export const ProfileButton = styled.TouchableOpacity``;
+export const ProfileButton = styled.TouchableOpacity`
+  margin-right: 10px;
+`;
 
 export const UserAvatar = styled.Image`
   width: 56px;
   height: 56px;
   border-radius: 28px;
+`;
+
+export const UserMenuButton = styled.TouchableOpacity`
+  height: 72px;
+  width: 72px;
+  border-radius: 36px;
+  align-items: flex-end;
+  justify-content: center;
 `;
 
 export const ProvidersList = styled(FlatList as new () => FlatList<Provider>)`

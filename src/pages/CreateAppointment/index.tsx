@@ -4,10 +4,9 @@ import { useRoute, useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Feather';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { format, startOfHour } from 'date-fns';
-import { utcToZonedTime } from 'date-fns-tz';
 
 import api from '../../services/api';
-
+import noProfileImage from '../../assets/default.png';
 import { useAuth } from '../../hooks/auth';
 
 import {
@@ -180,7 +179,11 @@ const CreateAppointment: React.FC = () => {
 
         <HeaderTitle>Cabeleireiros</HeaderTitle>
 
-        <UserAvatar source={{ uri: user.avatar_url }} />
+        {user.avatar_url ? (
+          <UserAvatar source={{ uri: user.avatar_url }} />
+        ) : (
+          <UserAvatar source={noProfileImage} />
+        )}
       </Header>
 
       <Content>
@@ -195,7 +198,11 @@ const CreateAppointment: React.FC = () => {
                 onPress={() => handleSelectProvider(provider.id)}
                 selected={provider.id === selectedProvider}
               >
-                <ProviderAvatar source={{ uri: provider.avatar_url }} />
+                {provider.avatar_url ? (
+                  <ProviderAvatar source={{ uri: provider.avatar_url }} />
+                ) : (
+                  <ProviderAvatar source={noProfileImage} />
+                )}
                 <ProviderName selected={provider.id === selectedProvider}>
                   {provider.name}
                 </ProviderName>
@@ -269,9 +276,18 @@ const CreateAppointment: React.FC = () => {
           </Section>
         </Schedule>
 
-        <CreateAppointmentButton onPress={handleCreateAppointment}>
-          <CreateAppointmentButtonText>Agendar</CreateAppointmentButtonText>
-        </CreateAppointmentButton>
+        {selectedHour ? (
+          <CreateAppointmentButton
+            enable={!!selectedHour}
+            onPress={handleCreateAppointment}
+          >
+            <CreateAppointmentButtonText>Agendar</CreateAppointmentButtonText>
+          </CreateAppointmentButton>
+        ) : (
+          <CreateAppointmentButton enable={!!selectedHour} onPress={() => { }}>
+            <CreateAppointmentButtonText>Agendar</CreateAppointmentButtonText>
+          </CreateAppointmentButton>
+        )}
       </Content>
     </Container>
   );
