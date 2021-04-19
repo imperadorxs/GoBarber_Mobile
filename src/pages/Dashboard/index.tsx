@@ -46,6 +46,10 @@ const Dashboard: React.FC = () => {
     navigate('Profile');
   }, [navigate]);
 
+  const navigateToMyAppointments = useCallback(() => {
+    navigate('MyAppointments');
+  }, [navigate]);
+
   const navigateToCreateAppointment = useCallback(
     (providerId: string) => {
       navigate('CreateAppointment', { providerId });
@@ -68,7 +72,7 @@ const Dashboard: React.FC = () => {
             Bem vindo, {'\n'} <UserName>{user.name}</UserName>
           </HeaderTitle>
         </HeaderProfile>
-        <UserMenuButton>
+        <UserMenuButton onPress={navigateToMyAppointments}>
           <Icon name="list" size={45} color="#fff" />
         </UserMenuButton>
       </Header>
