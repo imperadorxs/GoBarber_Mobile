@@ -1,4 +1,7 @@
 
+<h1 align="center">
+    <img alt="GoBarber Mobile" src="https://imperadorxs-images.s3.amazonaws.com/app-demo.gif" />
+</h1>
 
 <h3  align="center">
 
