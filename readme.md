@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <img alt="GoBarber Mobile" src="https://imperadorxs-images.s3.amazonaws.com/app-gobarber-imperadorxs.gif" />
+    <img alt="GoBarber Mobile" width="324" height="576" src="https://imperadorxs-images.s3.amazonaws.com/app-gobarber-imperadorxs.gif" />
 </h1>
 
 <h3  align="center">
