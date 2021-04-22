@@ -78,10 +78,6 @@ Technologies that I used to develop this api
 
 
 
-Import the `Insomnia.json` on Insomnia App
-
-
-
 ### Requirements
 
 
