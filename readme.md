@@ -8,59 +8,36 @@ API to register appointments in beauty salons or barbers
 
 
 
-<p  align="center">
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/imperadorxs/GoBarber_Mobile_2021">
 
-<img  alt="GitHub top language"  src="https://img.shields.io/github/languages/top/imperadorxs/GoBarber_Mobile_2021">
+  <a href="https://www.linkedin.com/in/imperadorxs/" target="_blank" rel="noopener noreferrer">
+    <img alt="Made by" src="https://img.shields.io/badge/made%20by-Allan%20Santiago-%20">
+  </a>
 
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/imperadorxs/GoBarber_Mobile_2021">
 
+  <a href="https://github.com/imperadorxs/GoBarber_Mobile_2021/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/imperadorxs/GoBarber_Mobile_2021">
+  </a>
 
-<a  href="https://www.linkedin.com/in/imperadorxs/"  target="_blank"  rel="noopener noreferrer">
+  <a href="https://github.com/imperadorxs/GoBarber_Mobile_2021/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/imperadorxs/GoBarber_Mobile_2021">
+  </a>
 
-<img  alt="Made by"  src="https://img.shields.io/badge/made%20by-Allan%20Santiago-%20">
-
-</a>
-
-
-
-<img  alt="Repository size"  src="https://img.shields.io/github/repo-size/imperadorxs/GoBarber_Mobile_2021">
-
-
-
-<a  href="https://github.com/imperadorxs/GoBarber_Mobile_2021/commits/main">
-
-<img  alt="GitHub last commit"  src="https://img.shields.io/github/last-commit/imperadorxs/GoBarber_Mobile_2021">
-
-</a>
-
-
-
-<a  href="https://github.com/imperadorxs/GoBarber_Mobile_2021/issues">
-
-<img  alt="Repository issues"  src="https://img.shields.io/github/issues/imperadorxs/GoBarber_Mobile_2021">
-
-</a>
-
-
-
-<img  alt="GitHub"  src="https://img.shields.io/github/license/imperadorxs/GoBarber_Mobile_2021">
-
+  <img alt="GitHub" src="https://img.shields.io/github/license/imperadorxs/GoBarber_Mobile_2021">
 </p>
 
 
 
-<p  align="center">
-
-<a  href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
-<a  href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
-<a  href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
-<a  href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
-<a  href="#-license">License</a>
-
+<p align="center">
+  <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
 </p>
+
 
 
 
